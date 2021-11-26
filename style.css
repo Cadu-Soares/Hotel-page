@@ -1,0 +1,377 @@
+/* --- GENERAL --- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+/* --- HEADER --- */
+
+header{
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 20px 50px;
+}
+
+#logo {
+    width: 200px;
+}
+
+#header-nav {
+    display: flex;
+}
+
+header li a {
+    color: #c3c63b;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header li:first-child {
+    margin-left:0;
+}
+header li:last-child{
+    margin-right: 0;
+}
+
+/* --- BANNER --- */
+
+.banner {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.banner h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid; 
+    box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #b4c63e;
+}
+
+.banner hr {
+    width: 200px;
+    height: 4px;
+    background: #fff;
+    margin-bottom: 70px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+/* ---CONHEÇA O HOTEL--- */
+
+#conheça-o-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+#conheça-o-hotel h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+}
+
+#conheça-o-hotel p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+}
+
+#conheça-o-hotel hr {
+    width: 200px;
+    height: 2px;
+    background: #191c03;
+    margin-bottom: 70px;
+    border: none;
+}
+
+#conheça-o-hotel .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#conheça-o-hotel .grid li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position:center;
+}
+
+.small {
+    flex-basis: 40%;
+}
+
+.large {
+    flex-basis: 60%;
+}
+
+/* --- CARACTERÍSTICAS --- */
+
+#caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #191c03;
+}
+
+#caracteristicas h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+#caracteristicas h4 {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+    color: #fff; 
+    text-align: center;
+}
+
+#caracteristicas p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+#caracteristicas hr {
+    width: 200px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 70px;
+    border: none;
+}
+
+#caracteristicas .grid {
+    width: 100%;
+    display: flex;
+}
+
+#caracteristicas .grid li {
+    padding: 0 30px;
+    text-align: center;
+}
+
+#icons  {
+    color: #c3c63b;
+    margin-bottom: 5px;
+}
+
+#caracteristicas .grid li h4 {
+    font-size: 1.5rem;
+    color: #c3c63b;
+}
+
+/* --- NEWSLETTER --- */
+
+#newslatter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+#newslatter h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #c3c63b;
+    text-align: center;
+}
+
+#newslatter p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #c3c63b;
+    text-align: center;
+}
+
+#newslatter hr {
+    width: 200px;
+    height: 2px;
+    background:#c3c63b;     
+    margin-bottom: 70px;
+    border: none;
+}
+
+#newslatter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+#newslatter form input {
+    padding: 15px;
+    border: 1px solid #c3c63b;
+    border-radius: 8px;
+    margin-right: 10px;
+    box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    flex: 1;
+}
+
+#newslatter .btn-cadastro {
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid; 
+    box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+#newslatter .btn-cadastro:hover{
+    color: #fff;
+    background: #c3c63b;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    background: #191c03;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom:25px;
+    align-items: center;
+    flex-direction: row;
+}
+footer ul li {
+    margin-right: 10px;
+
+}
+
+footer ul li:last-child {
+    margin-right: 0px
+}
+
+footer ul li a {
+    color:  #c3c63b;
+    font-size: 1.5rem;
+}
+
+footer p {
+    color: #c3c63b;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+footer hr {
+    width: 200px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 70px;
+    border: none;
+}
+
+footer span {
+    color: #c3c63b;
+    text-align: center;
+}
+
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 700px) {
+    header {flex-direction: column;}
+
+    #logo {margin-bottom: 15px;}
+
+    .banner h1 { font-size: 2.5rem;}
+    .banner h3 {font-size: 1.5rem;}
+
+    #conheça-o-hotel .grid li .small, #conheça-o-hotel .grid li .large { flex-basis: 100%;}
+
+    #caracteristicas .grid {flex-direction: column;}
+
+    #newslatter input{flex-basis: 100%; margin-bottom: 15px;}
+}
+
+@media (max-width: 600px) {
+    .small, .large {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) {
+    .banner h1 { font-size: 2.5rem; margin-top: 15px;}
+    .banner h3 {font-size: 1.5rem; margin-top: 15px;}
+} 
