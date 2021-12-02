@@ -46,7 +46,7 @@ header{
 }
 
 header li a {
-    color: #c3c63b;
+    color: #191c03;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -97,7 +97,7 @@ header li:last-child{
     outline: none;
     padding: 10px 15px;
     text-transform: uppercase;
-    transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .btn:hover {
@@ -113,7 +113,6 @@ header li:last-child{
     border: none;
     margin-top: 20px;
 }
-
 
 /* ---CONHEÇA O HOTEL--- */
 
@@ -144,6 +143,25 @@ header li:last-child{
     background: #191c03;
     margin-bottom: 70px;
     border: none;
+}
+
+.caroussel {
+    box-shadow:2px 2px 4px black;
+    overflow: hidden;
+    height: 450px;
+    width: 500px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.img-carousel{
+    object-fit: cover;
+    height: 450px;
+    width: 500px;
 }
 
 #conheça-o-hotel .grid {
@@ -289,10 +307,10 @@ header li:last-child{
     outline: none;
     padding: 10px 15px;
     text-transform: uppercase;
-    transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
-#newslatter .btn-cadastro:hover{
+#newslatter.btn-cadastro:hover{
     color: #fff;
     background: #c3c63b;
 }
@@ -355,8 +373,8 @@ footer span {
 
     #logo {margin-bottom: 15px;}
 
-    .banner h1 { font-size: 2.5rem;}
-    .banner h3 {font-size: 1.5rem;}
+    .hero h1 { font-size: 2.5rem;}
+    .hero h3 {font-size: 1.5rem;}
 
     #conheça-o-hotel .grid li .small, #conheça-o-hotel .grid li .large { flex-basis: 100%;}
 
@@ -370,8 +388,3 @@ footer span {
         display: none;
     }
 }
-
-@media (min-width: 320px) {
-    .banner h1 { font-size: 2.5rem; margin-top: 15px;}
-    .banner h3 {font-size: 1.5rem; margin-top: 15px;}
-} 
