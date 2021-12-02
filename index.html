@@ -27,6 +27,7 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       defer
     ></script>
+    <script src="./script.js" defer></script>
     <title>Hotel Paraíso</title>
   </head>
   <body>
@@ -36,9 +37,9 @@
     <div class="nav-container">
       <nav id="header-nav">
         <li><a href="#">HOME</a></li>
-        <li><a href="#caracteristicas">SOBRE</a></li>
-        <li><a href="#footer">CONTATOS</a></li>
-        <li><a href="#">RESERVAS</a></li>
+        <li><a href="#conheça-o-hotel">ABOUT</a></li>
+        <li><a href="#footer">CONTACTS</a></li>
+        <li><a href="#">BOOKING</a></li>
       </nav>
     </div>
     </header>
@@ -63,24 +64,14 @@
         comodidade
       </p>
       <hr />
-      <ul class="grid">
-        <li
-          class="small"
-          style="background-image: url('img/itacare-01.jpg')"
-        ></li>
-        <li
-          class="large"
-          style="background-image: url('img/itacare-02.jpg')"
-        ></li>
-        <li
-          class="large"
-          style="background-image: url('img/itacare-03.jpg')"
-        ></li>
-        <li
-          class="small"
-          style="background-image: url('img/itacare-04.jpg')"
-        ></li>
-      </ul>
+      <div class="caroussel">
+      <div class="carousel-container" id="img">
+        <img src="./img/itacare-01.jpg" alt="foto do hotel 01" class="img-carousel">
+        <img src="./img/itacare-02.jpg" alt="foto do hotel 02" class="img-carousel">
+        <img src="./img/itacare-03.jpg" alt="foto do hotel 03" class="img-carousel">
+        <img src="./img/itacare-04.jpg" alt="foto do hotel 03" class="img-carousel">
+      </div>
+    </div>
     </section>
 
     <!-- CARACTERÍSTICAS -->
@@ -145,6 +136,7 @@
     </section>
 
     <!-- FOOTER -->
+
     <footer id="footer">
       <ul>
         <li><a href="#"><i class="fab fa-facebook" id="facebook"></i></a></li>
